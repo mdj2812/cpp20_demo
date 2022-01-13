@@ -85,7 +85,7 @@ namespace cpp17
         constexpr Point pt1{A.x, A.y};
         constexpr Point pt2{B.x, B.y};
 
-        std::cout << "cp17: ";
+        std::cout << "cpp17: ";
 
         if (pt1 < pt2)
         {

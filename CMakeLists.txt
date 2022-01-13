@@ -1,6 +1,15 @@
 cmake_minimum_required(VERSION 3.17.0)
 project(cpp20_demo)
 
+# global compile options
+add_compile_options(-pipe)
+add_compile_options(-Wall)
+add_compile_options(-Werror)
+add_compile_options(-Wfatal-errors)
+add_compile_options(-fno-strict-aliasing) # this optimization can be re-enabled once code is compliant
+add_compile_options(-fno-omit-frame-pointer)
+add_compile_options(-pedantic )
+
 include(CTest)
 enable_testing()
 

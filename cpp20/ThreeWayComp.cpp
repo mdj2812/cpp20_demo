@@ -14,7 +14,7 @@ namespace cpp20
 
         constexpr auto res = (foo <=> bar);
 
-        std::cout << "cp20: ";
+        std::cout << "cpp20: ";
 
         if (res < 0)
         {
@@ -47,7 +47,7 @@ namespace cpp20
 
         constexpr auto res = (pt1 <=> pt2);
 
-        std::cout << "cp20: ";
+        std::cout << "cpp20: ";
 
         if (res < 0)
         {
