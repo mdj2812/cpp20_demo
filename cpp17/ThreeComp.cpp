@@ -2,6 +2,8 @@
 
 #include <iostream>
 
+#include "common.hpp"
+
 namespace cpp17
 {
     void threeCompDemo()
@@ -33,59 +35,79 @@ namespace cpp17
         int y;
         bool operator<(const Point &other) const
         {
-            if (x < other.x)
+            if (x == other.x)
             {
-                return true;
+                return y < other.y;
             }
 
-            if (y >= other.y)
+            return x < other.x;
+        }
+        bool operator<=(const Point &other) const
+        {
+            if (x == other.x)
             {
-                return false;
+                return y <= other.y;
             }
 
-            return true;
+            return x < other.x;
         }
         bool operator==(const Point &other) const
         {
-            return (x == other.x) && (y == other.y);
+            return (x == other.x) and (y == other.y);
+        }
+        bool operator!=(const Point &other) const
+        {
+            return (x != other.x) or (y != other.y);
         }
         bool operator>(const Point &other) const
         {
-            if (x > other.x)
+            if (x == other.x)
             {
-                return true;
+                return y > other.y;
             }
 
-            if (y <= other.y)
+            return x > other.x;
+        }
+        bool operator>=(const Point &other) const
+        {
+            if (x == other.x)
             {
-                return false;
+                return y >= other.y;
             }
 
-            return true;
+            return x > other.x;
         }
     };
     // compiler generates all six two-way comparison operators
 
     void threeCompOperatorOverloadDemo()
     {
-        constexpr Point A{1, 1};
-        constexpr Point B{2, 1};
+        constexpr Point pt1{A.x, A.y};
+        constexpr Point pt2{B.x, B.y};
 
-        std::cout << "cp20: ";
+        std::cout << "cp17: ";
 
-        if (A < B)
+        if (pt1 < pt2)
         {
             std::cout << "A is less than B";
         }
-        else if (A > B)
+        else if (pt1 > pt2)
         {
             std::cout << "A is greater than B";
         }
-        else // (A == B)
+        else // (pt1 == pt2)
         {
             std::cout << "A and B are equal";
         }
 
-        std::cout << "\n";
+        std::cout << " ";
+
+        std::cout << std::boolalpha
+                  << (pt1 == pt2) << ' '   // false; operator== is implicitly defaulted.
+                  << (pt1 != pt2) << ' '   // true
+                  << (pt1 < pt2) << ' '    // true
+                  << (pt1 <= pt2) << ' '   // true
+                  << (pt1 > pt2) << ' '    // false
+                  << (pt1 >= pt2) << '\n'; // false
     }
 }

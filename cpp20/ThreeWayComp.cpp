@@ -3,6 +3,8 @@
 #include <compare>
 #include <iostream>
 
+#include "common.hpp"
+
 namespace cpp20
 {
     void threeWayCompDemo()
@@ -40,10 +42,10 @@ namespace cpp20
 
     void threeWayOperatorOverloadDemo()
     {
-        constexpr Point A{1, 1};
-        constexpr Point B{2, 1};
+        constexpr Point pt1{A.x, A.y};
+        constexpr Point pt2{B.x, B.y};
 
-        constexpr auto res = (A <=> B);
+        constexpr auto res = (pt1 <=> pt2);
 
         std::cout << "cp20: ";
 
@@ -60,6 +62,14 @@ namespace cpp20
             std::cout << "A and B are equal";
         }
 
-        std::cout << "\n";
+        std::cout << " ";
+
+        std::cout << std::boolalpha
+                  << (pt1 == pt2) << ' '   // false; operator== is implicitly defaulted.
+                  << (pt1 != pt2) << ' '   // true
+                  << (pt1 < pt2) << ' '    // true
+                  << (pt1 <= pt2) << ' '   // true
+                  << (pt1 > pt2) << ' '    // false
+                  << (pt1 >= pt2) << '\n'; // false
     }
 }
