@@ -2,6 +2,7 @@
 
 #include <iostream>
 #include <string>
+#include <vector>
 
 struct PointBase
 {
@@ -22,4 +23,23 @@ struct DemoStruct
 inline void printDemoStruct(const DemoStruct &in)
 {
     std::cout << "str:" << in.str << " m: " << in.m << " n: " << in.n << '\n';
+}
+
+static const std::vector<std::string> demoVector = {"hello", ",", "world"};
+
+class Foo
+{
+public:
+    const auto &items()
+    {
+        return data;
+    }
+
+private:
+    std::vector<std::string> data{"hello", ",", "world"};
+};
+
+inline Foo getFoo()
+{
+    return Foo();
 }

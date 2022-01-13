@@ -5,11 +5,19 @@
 
 int main(int, char **)
 {
+    // Three way comparison
     cpp17::threeCompDemo();
     cpp20::threeWayCompDemo();
     cpp17::threeCompOperatorOverloadDemo();
     cpp20::threeWayOperatorOverloadDemo();
 
+    // Designated initializer
     cpp17::designatedInitializerDemo();
     cpp20::designatedInitializerDemo();
+
+    // init-statement in range based loop
+    cpp17::addLineNumber();
+    cpp20::addLineNumber();
+    // cpp17::danglingReference();
+    cpp20::ubFree();
 }
