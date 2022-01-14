@@ -9,6 +9,7 @@ add_compile_options(-Wfatal-errors)
 add_compile_options(-fno-strict-aliasing) # this optimization can be re-enabled once code is compliant
 add_compile_options(-fno-omit-frame-pointer)
 add_compile_options(-pedantic )
+add_compile_options(-O3 )
 
 include(CTest)
 enable_testing()
