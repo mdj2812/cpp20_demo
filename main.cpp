@@ -24,4 +24,8 @@ int main(int, char **)
     // constexpr virtual function
     cpp17::constVirtualFunctionDemo();
     cpp20::constexprVirtualFunctionDemo();
+
+    // constinit
+    cpp17::withoutConstinitDemo();
+    cpp20::constinitDemo();
 }

@@ -45,3 +45,6 @@ inline Foo getFoo()
 }
 
 constexpr uint32_t memoryNeeded{2000};
+
+inline const char *g() { return "dynamic initialization"; }
+constexpr const char *f(bool p) { return p ? "constant initializer" : g(); }
