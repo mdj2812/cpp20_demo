@@ -1,9 +1,11 @@
 set(CMAKE_CXX_STANDARD 20)
 
+file(GLOB cpp20_demo_SRC
+     "*.cpp"
+)
+
 add_library(cpp20_demo_lib STATIC
-    DesignatedInitializer.cpp
-    RangeBasedLoop.cpp
-    ThreeWayComp.cpp
+    ${cpp20_demo_SRC}
 )
 
 target_include_directories(cpp20_demo_lib

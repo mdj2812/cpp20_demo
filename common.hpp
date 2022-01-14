@@ -43,3 +43,5 @@ inline Foo getFoo()
 {
     return Foo();
 }
+
+constexpr uint32_t memoryNeeded{2000};

@@ -1,9 +1,11 @@
 set(CMAKE_CXX_STANDARD 17)
 
+file(GLOB cpp17_demo_SRC
+     "*.cpp"
+)
+
 add_library(cpp17_demo_lib STATIC
-    DesignatedInitializer.cpp
-    RangeBasedLoop.cpp
-    ThreeComp.cpp
+    ${cpp17_demo_SRC}
 )
 
 target_include_directories(cpp17_demo_lib

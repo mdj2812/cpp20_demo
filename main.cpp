@@ -20,4 +20,8 @@ int main(int, char **)
     cpp20::addLineNumber();
     // cpp17::danglingReference();
     cpp20::ubFree();
+
+    // constexpr virtual function
+    cpp17::constVirtualFunctionDemo();
+    cpp20::constexprVirtualFunctionDemo();
 }
