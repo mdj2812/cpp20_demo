@@ -32,7 +32,11 @@ int main(int, char **)
     // cpp20::constinitDemo();
 
     // likely unlikely
-    benchmark(cpp17::cos, "Without attributes");
-    benchmark(cpp20::cos, "With attributes");
-    benchmark<double(double)>(std::cos, "std::cos");
+    // benchmark(cpp17::cos, "Without attributes");
+    // benchmark(cpp20::cos, "With attributes");
+    // benchmark<double(double)>(std::cos, "std::cos");
+
+    // no_unique_address
+    cpp17::emptyClassDemo();
+    cpp20::emptyClassDemo();
 }

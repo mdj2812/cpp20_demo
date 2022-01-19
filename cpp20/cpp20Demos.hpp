@@ -2,7 +2,8 @@
 
 #include "ConstexprVirtualFunction.hpp"
 #include "ConstinitSpecifier.hpp"
-#include "DesignatedInitializer.hpp"
 #include "CosWithTaylorSeries.hpp"
+#include "DesignatedInitializer.hpp"
+#include "EmptyClass.hpp"
 #include "RangeBasedLoop.hpp"
 #include "ThreeWayComp.hpp"
