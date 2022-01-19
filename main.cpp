@@ -60,11 +60,17 @@ int main(int, char **)
     cpp17::genericLambdaDemo();
     cpp20::templateLambdaDemo();
     std::cout << "**********************************************\n\n";
-#endif
 
     // lambda captures
     std::cout << "**************** capture list demo *************\n";
     cpp17::captureListDemo();
     cpp20::captureListDemo();
+    std::cout << "**********************************************\n\n";
+#endif
+
+    // string literal as template parameter
+    std::cout << "***** string literal as template parameter *****\n";
+    cpp17::stringLiteralAsTemplateParameterDemo();
+    cpp20::stringLiteralAsTemplateParameterDemo();
     std::cout << "**********************************************\n\n";
 }
