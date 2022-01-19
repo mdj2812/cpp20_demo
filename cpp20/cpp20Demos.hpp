@@ -6,4 +6,5 @@
 #include "DesignatedInitializer.hpp"
 #include "EmptyClass.hpp"
 #include "RangeBasedLoop.hpp"
+#include "TemplateLambda.hpp"
 #include "ThreeWayComp.hpp"

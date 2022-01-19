@@ -6,7 +6,7 @@
 
 namespace cpp20
 {
-    struct Y
+    struct Y_with_attribute
     {
         int i;
         [[no_unique_address]] Empty e;
@@ -21,7 +21,7 @@ namespace cpp20
         static_assert(sizeof(X) >= sizeof(int) + 1);
 
         // empty member optimized out
-        std::cout << "sizeof(Y) == sizeof(int) is " << std::boolalpha
-                  << (sizeof(Y) == sizeof(int)) << '\n';
+        std::cout << "sizeof(Y_with_attribute) == sizeof(int) is " << std::boolalpha
+                  << (sizeof(Y_with_attribute) == sizeof(int)) << '\n';
     }
 }

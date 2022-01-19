@@ -4,6 +4,7 @@
 #include "CosWithTaylorSeries.hpp"
 #include "DesignatedInitializer.hpp"
 #include "EmptyClass.hpp"
+#include "GenericLambda.hpp"
 #include "RangeBasedLoop.hpp"
 #include "ThreeComp.hpp"
 #include "WithoutConstinitSpecifier.hpp"

@@ -39,4 +39,8 @@ int main(int, char **)
     // no_unique_address
     cpp17::emptyClassDemo();
     cpp20::emptyClassDemo();
+
+    // template lambda
+    cpp17::genericLambdaDemo();
+    cpp20::templateLambdaDemo();
 }
