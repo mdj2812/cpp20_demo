@@ -58,3 +58,8 @@ struct X
     int i;
     Empty e;
 };
+
+struct Device
+{
+    volatile int reg;
+};

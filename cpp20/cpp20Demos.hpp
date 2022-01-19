@@ -10,3 +10,4 @@
 #include "RangeBasedLoop.hpp"
 #include "TemplateLambda.hpp"
 #include "ThreeWayComp.hpp"
+#include "VoltatileUsage.hpp"

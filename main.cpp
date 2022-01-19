@@ -66,11 +66,25 @@ int main(int, char **)
     cpp17::captureListDemo();
     cpp20::captureListDemo();
     std::cout << "**********************************************\n\n";
-#endif
 
     // Non-type template parameter
     std::cout << "********* Non-type template parameter ********\n";
     cpp17::stringLiteralAsTemplateParameterDemo();
     cpp20::stringLiteralAsTemplateParameterDemo();
+    std::cout << "**********************************************\n\n";
+#endif
+
+    // volatile usage
+    std::cout << "*************** volatile usage ***************\n";
+    cpp17::incrementDecrementOperand();
+    cpp20::incrementDecrementOperand();
+    cpp17::directCompundAssignment();
+    cpp20::directCompundAssignment();
+    cpp17::functionParameter();
+    cpp20::functionParameter();
+    cpp17::functionReturnValue();
+    cpp20::functionReturnValue();
+    cpp17::structBinding();
+    cpp20::structBinding();
     std::cout << "**********************************************\n\n";
 }
