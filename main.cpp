@@ -7,6 +7,7 @@
 
 int main(int, char **)
 {
+#if 0
     // Three way comparison
     std::cout << "************ Three way comparison ************\n";
     cpp17::threeCompDemo();
@@ -58,5 +59,12 @@ int main(int, char **)
     std::cout << "**************** template lambda *************\n";
     cpp17::genericLambdaDemo();
     cpp20::templateLambdaDemo();
+    std::cout << "**********************************************\n\n";
+#endif
+
+    // lambda captures
+    std::cout << "**************** capture list demo *************\n";
+    cpp17::captureListDemo();
+    cpp20::captureListDemo();
     std::cout << "**********************************************\n\n";
 }

@@ -5,6 +5,7 @@
 #include "CosWithTaylorSeries.hpp"
 #include "DesignatedInitializer.hpp"
 #include "EmptyClass.hpp"
+#include "LambdaCapture.hpp"
 #include "RangeBasedLoop.hpp"
 #include "TemplateLambda.hpp"
 #include "ThreeWayComp.hpp"
