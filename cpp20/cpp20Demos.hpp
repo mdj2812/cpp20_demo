@@ -6,7 +6,7 @@
 #include "DesignatedInitializer.hpp"
 #include "EmptyClass.hpp"
 #include "LambdaCapture.hpp"
+#include "NonTypeTemplateParameter.hpp"
 #include "RangeBasedLoop.hpp"
-#include "StringLiteralTemplate.hpp"
 #include "TemplateLambda.hpp"
 #include "ThreeWayComp.hpp"

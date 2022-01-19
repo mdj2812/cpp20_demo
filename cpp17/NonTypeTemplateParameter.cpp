@@ -1,4 +1,4 @@
-#include "StringLiteralTemplate.hpp"
+#include "NonTypeTemplateParameter.hpp"
 
 #include <cstring>
 #include <iostream>

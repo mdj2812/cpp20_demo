@@ -7,6 +7,6 @@
 #include "GenericLambda.hpp"
 #include "LambdaCapture.hpp"
 #include "RangeBasedLoop.hpp"
-#include "StringLiteralTemplate.hpp"
+#include "NonTypeTemplateParameter.hpp"
 #include "ThreeComp.hpp"
 #include "WithoutConstinitSpecifier.hpp"

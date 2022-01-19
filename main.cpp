@@ -68,8 +68,8 @@ int main(int, char **)
     std::cout << "**********************************************\n\n";
 #endif
 
-    // string literal as template parameter
-    std::cout << "***** string literal as template parameter *****\n";
+    // Non-type template parameter
+    std::cout << "********* Non-type template parameter ********\n";
     cpp17::stringLiteralAsTemplateParameterDemo();
     cpp20::stringLiteralAsTemplateParameterDemo();
     std::cout << "**********************************************\n\n";

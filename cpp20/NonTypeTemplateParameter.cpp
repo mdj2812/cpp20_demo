@@ -1,4 +1,4 @@
-#include "StringLiteralTemplate.hpp"
+#include "NonTypeTemplateParameter.hpp"
 
 #include <algorithm>
 #include <cstddef>
@@ -6,6 +6,23 @@
 
 namespace cpp20
 {
+#if 0
+    template <float value>
+    struct X
+    {
+    }; // assume that this is ok
+
+    void function(X<1.0>) {}
+
+    void function(X<1.00000000001>) {} // is this a valid overload?
+
+    void floatingPointAsTemplateParameterDemo()
+    {
+        function(X<1.0000000000999999>());
+        // is it void function( X< 1.00000000001 > ) ?
+    }
+#endif
+
     /**
      * Literal class type that wraps a constant expression string.
      *
