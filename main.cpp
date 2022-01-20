@@ -15,12 +15,17 @@ int main(int, char **)
     cpp17::hasMemberFuncDemo();
     cpp20::hasMemberFuncConstraintsDemo();
     std::cout << "**********************************************\n\n";
-#endif
 
     // Ranges Library
     std::cout << "*************** Ranges Library ***************\n";
     cpp17::evenSquareDemo();
     cpp20::evenSquareDemo();
+    std::cout << "**********************************************\n\n";
+#endif
+
+    // Coroutines
+    std::cout << "**************** Coroutines ******************\n";
+    cpp20::generatorDemo();
     std::cout << "**********************************************\n\n";
 
 #if 0

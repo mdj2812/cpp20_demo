@@ -3,6 +3,7 @@
 #include "ConstexprVirtualFunction.hpp"
 #include "ConstinitSpecifier.hpp"
 #include "ConstraintsAndConcepts.hpp"
+#include "CoroutineGenerator.hpp"
 #include "CosWithTaylorSeries.hpp"
 #include "DesignatedInitializer.hpp"
 #include "EmptyClass.hpp"

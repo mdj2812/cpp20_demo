@@ -9,6 +9,7 @@ add_compile_options(-Wfatal-errors)
 add_compile_options(-pedantic )
 add_compile_options(-fsanitize=address)
 add_compile_options(-O3 )
+add_compile_options(-fcoroutines)
 add_link_options(-fsanitize=address)
 
 include(CTest)
