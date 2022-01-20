@@ -72,6 +72,11 @@ public:
     {
     }
 
+    operator std::string() const
+    {
+        return m_string;
+    }
+
     std::string &append(SomeoneWithAppend &other)
     {
         return m_string.append(other.getStr());
