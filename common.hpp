@@ -63,3 +63,25 @@ struct Device
 {
     volatile int reg;
 };
+
+class SomeoneWithAppend
+{
+public:
+    SomeoneWithAppend(const std::string &str)
+        : m_string(str)
+    {
+    }
+
+    std::string &append(SomeoneWithAppend &other)
+    {
+        return m_string.append(other.getStr());
+    }
+
+    const std::string &getStr() const
+    {
+        return m_string;
+    }
+
+private:
+    std::string m_string;
+};

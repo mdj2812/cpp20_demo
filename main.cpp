@@ -7,6 +7,14 @@
 
 int main(int, char **)
 {
+    // Constraints and concepts
+    std::cout << "********** Constraints and concepts **********\n";
+    cpp17::integralCheckDemo();
+    cpp20::predefinedIntegralConceptDemo();
+    cpp17::hasMemberFuncDemo();
+    cpp20::hasMemberFuncConstraintsDemo();
+    std::cout << "**********************************************\n\n";
+
 #if 0
     // Three way comparison
     std::cout << "************ Three way comparison ************\n";
@@ -72,7 +80,6 @@ int main(int, char **)
     cpp17::stringLiteralAsTemplateParameterDemo();
     cpp20::stringLiteralAsTemplateParameterDemo();
     std::cout << "**********************************************\n\n";
-#endif
 
     // volatile usage
     std::cout << "*************** volatile usage ***************\n";
@@ -87,4 +94,5 @@ int main(int, char **)
     cpp17::structBinding();
     cpp20::structBinding();
     std::cout << "**********************************************\n\n";
+#endif
 }
