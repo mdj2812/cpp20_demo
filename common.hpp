@@ -90,3 +90,5 @@ public:
 private:
     std::string m_string;
 };
+
+const std::vector<int> ints = {0, 1, 2, 3, 4, 5};

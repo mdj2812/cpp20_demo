@@ -9,6 +9,7 @@
 #include "LambdaCapture.hpp"
 #include "NonTypeTemplateParameter.hpp"
 #include "RangeBasedLoop.hpp"
+#include "RangesExample.hpp"
 #include "TemplateLambda.hpp"
 #include "ThreeWayComp.hpp"
 #include "VoltatileUsage.hpp"

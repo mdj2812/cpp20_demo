@@ -7,12 +7,20 @@
 
 int main(int, char **)
 {
+#if 0
     // Constraints and concepts
     std::cout << "********** Constraints and concepts **********\n";
     cpp17::integralCheckDemo();
     cpp20::predefinedIntegralConceptDemo();
     cpp17::hasMemberFuncDemo();
     cpp20::hasMemberFuncConstraintsDemo();
+    std::cout << "**********************************************\n\n";
+#endif
+
+    // Ranges Library
+    std::cout << "*************** Ranges Library ***************\n";
+    cpp17::evenSquareDemo();
+    cpp20::evenSquareDemo();
     std::cout << "**********************************************\n\n";
 
 #if 0
