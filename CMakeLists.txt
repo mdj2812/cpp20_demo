@@ -10,12 +10,9 @@ add_compile_options(-Werror)
 add_compile_options(-Wfatal-errors)
 add_compile_options(-pedantic )
 add_compile_options(-fsanitize=address)
-add_compile_options(-O3 )
 add_compile_options(-fcoroutines)
+add_compile_options(-O3 )
 add_link_options(-fsanitize=address)
-
-include(CTest)
-enable_testing()
 
 add_subdirectory(cpp17)
 add_subdirectory(cpp20)
