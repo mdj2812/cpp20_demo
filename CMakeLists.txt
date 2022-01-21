@@ -1,7 +1,9 @@
-cmake_minimum_required(VERSION 3.17.0)
+cmake_minimum_required(VERSION 3.10.0)
 project(cpp20_demo)
 
 # global compile options
+set(CMAKE_CXX_COMPILER "g++-10")
+
 add_compile_options(-pipe)
 add_compile_options(-Wall)
 add_compile_options(-Werror)

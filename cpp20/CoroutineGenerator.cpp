@@ -107,8 +107,8 @@ namespace cpp20
 
         for (int i = 0; i <= 2; ++i)
         {
-            auto val = gen.getNextValue();        // (12)
-            std::cout << "main: " << val << '\n'; // (14)
+            auto val = gen.getNextValue();                // (12)
+            std::cout << __func__ << ": " << val << '\n'; // (14)
         }
     }
 }

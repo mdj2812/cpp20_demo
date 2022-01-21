@@ -31,7 +31,7 @@ namespace cpp20
     template <typename T>
     void run()
     {
-        T hw;
+        constexpr T hw;
 
         static_assert(hw.capacity() > memoryNeeded, "HW capacity not enough!");
 
